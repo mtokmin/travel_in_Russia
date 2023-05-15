@@ -1,0 +1,19 @@
+.photo-gallery {
+    @include container;
+};
+
+.photo-gallery__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+}
+
+.photo-gallery__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
