@@ -1,5 +1,6 @@
 .photo-gallery {
     @include container;
+    margin-bottom: 64px;
 };
 
 .photo-gallery__list {
