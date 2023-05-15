@@ -1,0 +1,17 @@
+section.lead 
+    .wrapper
+        .lead__text
+            h1.lead__title Путешествия по&nbsp;России
+            p.lead__subtitle Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.
+    .lead__image
+        picture 
+            source(media="(max-width: 400px)", srcset="images/dist/lead__image--mobile.avif 320w", type="image/avif")
+            source(media="(max-width: 400px)", srcset="images/dist/lead__image--mobile.webp 320w", type="image/webp")
+            source(media="(max-width: 799px)", srcset="images/dist/lead__image--tablet.avif 768w", type="image/avif")
+            source(media="(max-width: 799px)", srcset="images/dist/lead__image--tablet.webp 768w", type="image/webp")
+            source(media="(max-width: 799px)", srcset="images/dist/lead__image--tablet.jpg 768w", type="image/jpg")
+            source(media="(min-width: 800px)", srcset="images/dist/lead__image--desktop.avif 984w", type="image/avif")
+            source(media="(min-width: 800px)", srcset="images/dist/lead__image--desktop.webp 984w", type="image/webp")
+            source(media="(min-width: 800px)", srcset="images/dist/lead__image--desktop.jpg 984w", type="image/jpg")
+            img(src="images/dist/lead__image--mobile.jpg", alt="Изображение женщины в поезде", srcset="")
+        p.lead__caption ваша полка — верхняя

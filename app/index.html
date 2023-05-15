@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Путешествия по России</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body> </body>
+  <body class="page-body">
+    <header class="header header__container"><a class="header__logo logo" href=""><img class="logo__icon" src="images/dist/__logo.svg" alt="Логотип" width="142" height="42"></a>
+      <ul class="header__lang-list lang-list">
+        <li class="lang-list__item lang-list__item--active"> <a class="lang-list__link" href="">Ru</a></li>
+        <li class="lang-list__item"> <a class="lang-list__link" href="">En</a></li>
+      </ul>
+    </header>
+    <main class="content">
+      <section class="lead"> 
+        <div class="wrapper">
+          <div class="lead__text">
+            <h1 class="lead__title">Путешествия по&nbsp;России</h1>
+            <p class="lead__subtitle">Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.</p>
+          </div>
+        </div>
+        <div class="lead__image">
+          <picture> 
+            <source media="(max-width: 400px)" srcset="images/dist/lead__image--mobile.avif 320w" type="image/avif">
+            <source media="(max-width: 400px)" srcset="images/dist/lead__image--mobile.webp 320w" type="image/webp">
+            <source media="(max-width: 799px)" srcset="images/dist/lead__image--tablet.avif 768w" type="image/avif">
+            <source media="(max-width: 799px)" srcset="images/dist/lead__image--tablet.webp 768w" type="image/webp">
+            <source media="(max-width: 799px)" srcset="images/dist/lead__image--tablet.jpg 768w" type="image/jpg">
+            <source media="(min-width: 800px)" srcset="images/dist/lead__image--desktop.avif 984w" type="image/avif">
+            <source media="(min-width: 800px)" srcset="images/dist/lead__image--desktop.webp 984w" type="image/webp">
+            <source media="(min-width: 800px)" srcset="images/dist/lead__image--desktop.jpg 984w" type="image/jpg"><img src="images/dist/lead__image--mobile.jpg" alt="Изображение женщины в поезде" srcset="">
+          </picture>
+          <p class="lead__caption">ваша полка — верхняя</p>
+        </div>
+      </section>
+      <section class="intro content__container"> 
+        <h2 class="intro__title">Чего мы&nbsp;там не&nbsp;видели?</h2>
+        <p class="intro__text">
+          По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, 
+          но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» 
+          и проехала 20 тысяч километров
+          по родной стране. Мы выбрали 
+          и описали некоторые интересные места, достойные вашего отпуска.
+        </p>
+        <ul class="intro__list intro-list">
+          <li class="intro-list__item">Часовых поясов <span>11</span></li>
+          <li class="intro-list__item">Объектов природного наследия ЮНЕСКО <span>12</span></li>
+          <li class="intro-list__item">Объектов культурного наследия ЮНЕСКО <span>16</span></li>
+          <li class="intro-list__item">Природных заповедников <span>105</span></li>
+          <li class="intro-list__item">Аэропортов <span>241</span></li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__nav">
+        <ul class="footer__links">
+          <li class="footer__link"><a href="">Карты</a></li>
+          <li class="footer__link"><a href="">Погода</a></li>
+          <li class="footer__link"><a href="">Расписание</a></li>
+          <li class="footer__link"><a href="">Календарь</a></li>
+          <li class="footer__link"><a href="">Путешествия    </a></li>
+        </ul>
+      </nav>
+      <p class="footer__copyright">© 2020. Токмин Михаил</p>
+    </footer>
+  </body>
 </html>

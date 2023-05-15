@@ -83,7 +83,7 @@ const watching = () => {
   });
   watch(['app/scss/**/*.scss', 'app/scss/style.scss'], styles);
   watch(['app/images/src'], images);
-  watch(['app/pug'], pug);
+  watch(['app/pages'], pug);
   watch(['app/js/**/*.js', 'app/js/main.js', '!app/js/main.min.js'], scripts);
   watch(['app/*.html']).on('change', browserSync.reload);
 };
@@ -93,7 +93,7 @@ const cleanDocs = () => {
 };
 
 const building = () => {
-  return src(['app/css/style.min.css', 'app/images/dist/*.*', 'app/fonts/*.*', 'app/js/main.min.js', 'app/*.html'], {
+  return src(['app/css/*.css', 'app/images/dist/*.*', 'app/fonts/*.*', 'app/js/main.min.js', 'app/*.html'], {
     base: 'app',
   }).pipe(dest('docs'));
 };
