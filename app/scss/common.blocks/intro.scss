@@ -2,6 +2,10 @@
   color: $color-main-white;
   margin-bottom: 64px;
 
+  @include for-tablet {
+    margin-bottom: 88px;
+  }
+
   @include for-desktop {
     padding-right: 286px;
   }
