@@ -8,6 +8,11 @@
   font-size: 32px;
   font-weight: 900;
   line-height: 1.09;
+
+  @include for-tablet {
+    font-size: 54px;
+    margin-bottom: 38px;
+  }
 }
 
 .intro__text {

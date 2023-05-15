@@ -3,6 +3,10 @@
   color: $color-main-white;
   display: flex;
   flex-direction: column;
+
+  @include for-tablet {
+    margin-bottom: 89px;
+  }
 }
 
 .lead__text {
