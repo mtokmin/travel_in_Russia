@@ -10,6 +10,7 @@
 
   @include for-desktop {
     @include container;
+    margin-bottom: 93px;
   }
 
   @include for-desktop-big {

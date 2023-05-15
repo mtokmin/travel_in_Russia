@@ -1,5 +1,15 @@
 .intro {
   color: $color-main-white;
+
+  @include for-desktop {
+    padding-right: 286px;
+  }
+
+  @include for-desktop-big {
+    padding-left: 148px;
+    padding-right: 440px;
+  }
+
 }
 
 .intro__title {
