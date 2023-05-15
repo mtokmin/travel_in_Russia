@@ -1,6 +1,10 @@
 .photo-gallery {
     @include container;
     margin-bottom: 64px;
+
+    @include for-tablet {
+        margin-bottom: 91px;
+    }
 };
 
 .photo-gallery__list {
