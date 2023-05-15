@@ -28,6 +28,7 @@ a {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   background-color: $color-main-dark-gray;
+  justify-items: center;
   font-family: 'Inter', 'Arial', sans-serif;
   font-weight: 400;
   

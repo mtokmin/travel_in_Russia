@@ -1,8 +1,10 @@
 .header {
   margin-bottom: 46px;
   padding-top: 16px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 
   @include for-tablet {
     padding-top: 28px;
@@ -11,6 +13,8 @@
 
 .header__container {
   @include container;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo__icon {
