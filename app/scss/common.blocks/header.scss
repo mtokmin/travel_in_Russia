@@ -9,6 +9,10 @@
   @include for-tablet {
     padding-top: 28px;
   }
+
+  @include for-desktop-big {
+    margin-bottom: 55px;
+  }
 }
 
 .header__container {

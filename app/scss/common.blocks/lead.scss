@@ -7,6 +7,15 @@
   @include for-tablet {
     margin-bottom: 89px;
   }
+
+  @include for-desktop {
+    @include container;
+  }
+
+  @include for-desktop-big {
+    padding-left: 148px;
+    padding-right: 148px;
+  }
 }
 
 .lead__text {
@@ -14,6 +23,10 @@
 
   @include for-tablet {
     margin-bottom: 56px;
+  }
+
+  @include for-desktop-big {
+    margin-bottom: 63px;
   }
 }
 
@@ -46,6 +59,11 @@
     font-size: 30px;
     line-height: 1.2;
   }
+
+  @include for-desktop {
+    padding-left: 192px;
+    padding-right: 192px;
+  }
 }
 
 .lead__image img {
@@ -63,5 +81,9 @@
 
   @include for-tablet {
     padding-left: 24px;
+  }
+
+  @include for-desktop {
+    padding-left: 0;
   }
 }
