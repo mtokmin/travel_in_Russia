@@ -1,5 +1,6 @@
 .places {
   color: $color-main-white;
+  margin-bottom: 64px;
 }
 
 .places__container {
@@ -90,21 +91,21 @@
 }
 
 .place__image {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 
-    @include for-tablet {
-      padding-right: 12px;
-    }
+  @include for-tablet {
+    padding-right: 12px;
+  }
 
-    @include for-desktop {
-      padding-right: 16px;
-    }
+  @include for-desktop {
+    padding-right: 16px;
+  }
 
-    @include for-desktop-big {
-      padding-right: 24px;
-    }
+  @include for-desktop-big {
+    padding-right: 24px;
+  }
 }
 
 .place__paragraphs {
@@ -127,6 +128,6 @@
 }
 
 .place__paragraph {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }

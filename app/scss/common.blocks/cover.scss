@@ -1,0 +1,37 @@
+.cover {
+  margin-bottom: 64px;
+}
+
+.cover__link {
+  padding-top: 13px;
+  display: block;
+  color: $color-main-white;
+  background: linear-gradient($color-gray-cover, $color-gray-cover),
+    url(../images/dist/cover__background--mobile.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 16/10;
+}
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  @include container;
+}
+
+.cover__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.09;
+  text-align: center;
+}
+
+.cover__subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+}
