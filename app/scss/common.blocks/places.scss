@@ -6,6 +6,11 @@
   @include for-tablet {
     @include container;
   }
+
+  @include for-desktop-big {
+    padding-left: 148px;
+    padding-right: 148px;
+  }
 }
 
 .places__list {
@@ -18,6 +23,10 @@
 
   @include for-tablet {
     gap: 73px;
+  }
+
+  @include for-desktop {
+    gap: 83px;
   }
 }
 
@@ -45,6 +54,11 @@
     padding-right: 20px;
     font-size: 42px;
     line-height: 1.1;
+  }
+
+  @include for-desktop {
+    font-size: 72px;
+    line-height: 1.06;
   }
 }
 
@@ -83,6 +97,14 @@
     @include for-tablet {
       padding-right: 12px;
     }
+
+    @include for-desktop {
+      padding-right: 16px;
+    }
+
+    @include for-desktop-big {
+      padding-right: 24px;
+    }
 }
 
 .place__paragraphs {
@@ -97,6 +119,10 @@
   @include for-tablet {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @include for-desktop {
+    font-size: 18px;
   }
 }
 
