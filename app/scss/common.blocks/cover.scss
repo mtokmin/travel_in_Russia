@@ -82,12 +82,14 @@
 
 .cover__title {
   margin: 0;
+  max-width: 75%;
   font-size: 32px;
   font-weight: 900;
   line-height: 1.09;
   text-align: center;
 
   @include for-tablet {
+    max-width: 80%;
     font-size: 72px;
     line-height: 1.06;
   }
