@@ -1,5 +1,10 @@
 .cover {
   margin-bottom: 64px;
+
+  @include for-desktop-big {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
 }
 
 .cover__link {
@@ -15,6 +20,22 @@
   @include for-tablet {
     background: linear-gradient($color-gray-cover, $color-gray-cover),
       url(../images/dist/cover__background--tablet.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include for-desktop {
+    background: linear-gradient($color-gray-cover, $color-gray-cover),
+      url(../images/dist/cover__background--desktop.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include for-desktop-big {
+    background: linear-gradient($color-gray-cover, $color-gray-cover),
+      url(../images/dist/cover__background--desktop-big.jpg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,6 +70,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   height: 100%;
   @include container;
@@ -65,9 +87,13 @@
   line-height: 1.09;
   text-align: center;
 
-  @include for-tablet{
+  @include for-tablet {
     font-size: 72px;
     line-height: 1.06;
+  }
+
+  @include for-desktop {
+    max-width: 60%;
   }
 }
 
@@ -78,9 +104,16 @@
   text-align: center;
 
   @include for-tablet {
-    padding-left: 140px;
-    padding-right: 140px;
+    max-width: 60%;
     font-size: 18px;
     line-height: 1.22;
+  }
+
+  @include for-desktop {
+    max-width: 50%;
+  }
+
+  @include for-desktop-big {
+    max-width: 40%;
   }
 }
