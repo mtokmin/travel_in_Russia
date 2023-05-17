@@ -40,29 +40,29 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
 
-.cover__link:hover {
-  @include for-desktop {
-    background: linear-gradient(
-        $color-gray-cover-hover,
-        $color-gray-cover-hover
-      ),
-      url(../images/dist/cover__background--desktop.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  &:hover {
+    @include for-desktop {
+      background: linear-gradient(
+          $color-gray-cover-hover,
+          $color-gray-cover-hover
+        ),
+        url(../images/dist/cover__background--desktop.jpg);
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 
-  @include for-desktop-big {
-    background: linear-gradient(
-        $color-gray-cover-hover,
-        $color-gray-cover-hover
-      ),
-      url(../images/dist/cover__background--desktop-big.jpg);
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include for-desktop-big {
+      background: linear-gradient(
+          $color-gray-cover-hover,
+          $color-gray-cover-hover
+        ),
+        url(../images/dist/cover__background--desktop-big.jpg);
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
