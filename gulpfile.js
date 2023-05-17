@@ -18,7 +18,7 @@ const gulpPug = require('gulp-pug');
 
 const pug = ()=> {
   return src('app/pages/*.pug')
-  .pipe(gulpPug({pretty: true}))
+  .pipe(gulpPug({pretty: false}))
   .pipe(dest('app'))
 }
 
