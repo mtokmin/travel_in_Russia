@@ -93,7 +93,7 @@ const cleanDocs = () => {
 };
 
 const building = () => {
-  return src(['app/css/*.css', 'app/images/dist/*.*', 'app/fonts/*.*', 'app/js/main.min.js', 'app/*.html'], {
+  return src(['app/css/*.css', 'app/images/dist/*.*', 'app/images/dist/*/*.*', 'app/fonts/*.*', 'app/js/main.min.js', 'app/*.html'], {
     base: 'app',
   }).pipe(dest('docs'));
 };
