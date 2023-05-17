@@ -3,7 +3,6 @@
 }
 
 .cover__link {
-  padding-top: 13px;
   display: block;
   color: $color-main-white;
   background: linear-gradient($color-gray-cover, $color-gray-cover),
@@ -12,14 +11,51 @@
   background-repeat: no-repeat;
   background-size: cover;
   aspect-ratio: 16/10;
+
+  @include for-tablet {
+    background: linear-gradient($color-gray-cover, $color-gray-cover),
+      url(../images/dist/cover__background--tablet.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.cover__link:hover {
+  @include for-desktop {
+    background: linear-gradient(
+        $color-gray-cover-hover,
+        $color-gray-cover-hover
+      ),
+      url(../images/dist/cover__background--desktop.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include for-desktop-big {
+    background: linear-gradient(
+        $color-gray-cover-hover,
+        $color-gray-cover-hover
+      ),
+      url(../images/dist/cover__background--desktop-big.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .cover__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 16px;
   height: 100%;
   @include container;
+
+  @include for-tablet {
+    gap: 32px;
+  }
 }
 
 .cover__title {
@@ -28,10 +64,23 @@
   font-weight: 900;
   line-height: 1.09;
   text-align: center;
+
+  @include for-tablet{
+    font-size: 72px;
+    line-height: 1.06;
+  }
 }
 
 .cover__subtitle {
+  margin: 0;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
+
+  @include for-tablet {
+    padding-left: 140px;
+    padding-right: 140px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }

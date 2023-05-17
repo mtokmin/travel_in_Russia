@@ -1,6 +1,10 @@
 .places {
   color: $color-main-white;
   margin-bottom: 64px;
+
+  @include for-tablet {
+    margin-bottom: 88px;
+  }
 }
 
 .places__container {
